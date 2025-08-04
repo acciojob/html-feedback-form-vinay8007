@@ -4,12 +4,36 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title style="color">Feedback Form"</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1 styel="color:aqua">Feedback Form</h1>
+	<form method="post">
+		
+		<!--Name input -->
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+		<br><br>
+		
+		<!--Portfolio URL input -->
+		<label for="portfolio">Porttfolio:</label>
+		<input type="url" id="portfolio" name="portfoli" required>
+		<br><br>
+
+		<!--favorite color input-->
+		<label for="fabColor">Favorite Color</label>
+		<input type="color" id="favColor" name="favColor" required>
+		<br><br>
+		<!--Likeness range input -->
+		<lable for="likeness">Likeness</lable>
+		<input type="range" id="likeness" name="likeness" min="1" max="100">
+		<br><br>
+
+		<!--Submit button -->
+		<button type="submit">Submit</button>
+	</form>
 
 </body>
 
